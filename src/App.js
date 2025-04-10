@@ -1,4 +1,3 @@
-
 import { Box, Paper, AppBar, Toolbar, Typography } from '@mui/material';
 import TaskForm from './components/TaskForm/TaskForm';
 import SearchBar from './components/SearchBar/SearchBar';
@@ -8,7 +7,7 @@ import TaskList from './components/TaskList/TaskList';
 function App() {
   return (
     <Box sx={{ maxWidth: 600, margin: 'auto', padding: 2 }}>
-      <AppBar position="static" sx={{ backgroundColor: '	#455a64' }}>
+      <AppBar position="static" sx={{ backgroundColor: '#455a64' }}>
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Task Manager
