@@ -1,0 +1,46 @@
+/* Main tabs container */
+.filter-tabs-container {
+    margin: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Individual tab styling */
+  .filter-tabs-container .MuiTab-root {
+    font-weight: 500;
+    text-transform: none;
+    min-width: auto;
+    padding: 0.5rem 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+  }
+  
+  /* Active tab styling */
+  .filter-tabs-container .MuiTab-root.Mui-selected {
+    color: #4361ee;
+    font-weight: 600;
+  }
+  
+  /* Tab indicator animation */
+  .filter-tabs-container .MuiTabs-indicator {
+    background-color: #4361ee;
+    height: 3px;
+    border-radius: 3px 3px 0 0;
+  }
+  
+  /* Hover effects */
+  .filter-tabs-container .MuiTab-root:hover {
+    color: #4361ee;
+    background-color: rgba(67, 97, 238, 0.04);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .filter-tabs-container {
+      margin: 0.75rem 0;
+    }
+    
+    .filter-tabs-container .MuiTab-root {
+      padding: 0.5rem;
+      font-size: 0.85rem;
+    }
+  }

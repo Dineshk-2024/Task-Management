@@ -1,0 +1,65 @@
+/* Main task item container */
+.task-item {
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Hover effect */
+  .task-item:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+  }
+  
+  /* Completed task styling */
+  .task-item.completed {
+    background-color: #f8f9fa;
+  }
+  
+  /* Checkbox styling */
+  .task-item .MuiCheckbox-root {
+    color: #4361ee;
+    padding: 0.5rem;
+  }
+  
+  .task-item .MuiCheckbox-root:hover {
+    background-color: rgba(67, 97, 238, 0.08);
+  }
+  
+  /* Task text styling */
+  .task-text {
+    margin: 0 1rem;
+    padding-right: 2rem;
+    color: #212529;
+  }
+  
+  .task-text.completed {
+    color: #6c757d;
+    text-decoration: line-through;
+  }
+  
+  /* Delete button styling */
+  .delete-button {
+    color: #dc3545;
+    transition: all 0.2s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: rgba(220, 53, 69, 0.08);
+    transform: scale(1.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .task-item {
+      padding: 0.5rem;
+    }
+    
+    .task-text {
+      margin: 0 0.5rem;
+      font-size: 0.95rem;
+    }
+  }

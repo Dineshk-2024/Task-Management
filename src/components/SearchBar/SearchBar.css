@@ -1,0 +1,70 @@
+/* Main container styles */
+.search-bar-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  /* Search icon customization */
+  .search-bar-icon {
+    color: rgba(0, 0, 0, 0.54);
+    margin-right: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  /* Text field customization */
+  .search-bar-input .MuiInput-root {
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+  
+  .search-bar-input .MuiInput-input {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+  }
+  
+  .search-bar-input .MuiInput-underline:before {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  
+  .search-bar-input .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  }
+  
+  .search-bar-input .MuiInput-underline:after {
+    border-bottom: 2px solid #4361ee;
+    transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  }
+  
+  /* Focus and active states */
+  .search-bar-input:focus-within .search-bar-icon {
+    color: #4361ee;
+  }
+  
+  /* Animation for search interaction */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .search-bar-input:focus-within {
+    animation: pulse 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .search-bar-container {
+      margin-bottom: 0.75rem;
+    }
+    
+    .search-bar-input .MuiInput-input {
+      font-size: 0.9rem;
+    }
+    
+    .search-bar-icon {
+      font-size: 1.2rem;
+    }
+  }

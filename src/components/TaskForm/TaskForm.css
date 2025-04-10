@@ -1,0 +1,69 @@
+/* Main container styles */
+.task-form {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Text field customization */
+.task-form .MuiTextField-root {
+  flex-grow: 1;
+}
+
+.task-form .MuiOutlinedInput-root {
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.task-form .MuiOutlinedInput-input {
+  padding: 12px 14px;
+}
+
+/* Button customization */
+.task-form .MuiButton-root {
+  background-color: #64b5f6; /* Green button */
+  color: #070707;
+  border-radius: 8px;
+  padding: 0 24px;
+  text-transform: none;
+  font-weight: 500;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.task-form .MuiButton-root:hover {
+  background-color: #64b5f6; /* Darker green on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Focus states */
+.task-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-width: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .task-form {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .task-form .MuiButton-root {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Header background (Task Manager title area) */
+.MuiAppBar-root {
+  background-color:  #4361ee; /* Purple header */
+  color: #fff;
+}
+
+.header {
+  background-color:  #4361ee;
+
+  color: #fff;
+}
